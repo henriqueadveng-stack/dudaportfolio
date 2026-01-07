@@ -39,7 +39,7 @@
 </script>
 
 <svelte:head>
-  <title>Portfólio de Vídeos | DUDA Design Studio</title>
+  <title>Portfólio de Vídeos | Duda Design Studio</title>
   <meta name="description" content="Confira nossos trabalhos de edição de vídeos, motion graphics e conteúdo para redes sociais." />
 </svelte:head>
 

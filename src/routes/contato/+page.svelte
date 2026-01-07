@@ -11,8 +11,8 @@
 </script>
 
 <svelte:head>
-  <title>Contato | DUDA Design Studio</title>
-  <meta name="description" content="Entre em contato com a DUDA Design Studio. Vamos conversar sobre seu projeto de design ou edição de vídeos." />
+  <title>Contato | Duda Design Studio</title>
+  <meta name="description" content="Entre em contato com a Duda Design Studio. Vamos conversar sobre seu projeto de design ou edição de vídeos." />
 </svelte:head>
 
 <!-- Full Screen Contact Page -->

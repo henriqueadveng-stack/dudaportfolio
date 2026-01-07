@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-  <title>DUDA Design Studio | Bora sair da mesmice</title>
+  <title>Duda Design Studio | Bora sair da mesmice</title>
   <meta name="description" content="Uma dupla focada em transformar a comunicação visual e textual. Edição de vídeos e design para social media." />
 </svelte:head>
 

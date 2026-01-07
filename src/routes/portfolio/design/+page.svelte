@@ -39,7 +39,7 @@
 </script>
 
 <svelte:head>
-  <title>Portfólio de Design | DUDA Design Studio</title>
+  <title>Portfólio de Design | Duda Design Studio</title>
   <meta name="description" content="Confira nossos trabalhos de design para social media, identidade visual e branding." />
 </svelte:head>
 
