@@ -14,6 +14,7 @@
   }
 
   function handleBackdropClick(e: MouseEvent) {
+    // Only close if clicking directly on the backdrop (not on children)
     if (e.target === e.currentTarget) {
       closeVideoModal();
     }
@@ -29,28 +30,33 @@
 <svelte:window onkeydown={handleKeydown} />
 
 {#if $videoModal.open}
-  <!-- svelte-ignore a11y_interactive_supports_focus -->
-  <!-- svelte-ignore a11y_click_events_have_key_events -->
+  <!-- Backdrop - clickable to close -->
   <div
-    class="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-8"
+    class="fixed inset-0 z-[100] bg-black/95"
     transition:fade={{ duration: 200 }}
-    onclick={handleBackdropClick}
+    onclick={closeVideoModal}
+    onkeydown={(e) => e.key === 'Escape' && closeVideoModal()}
+    role="button"
+    tabindex="0"
+    aria-label="Fechar modal"
+  ></div>
+
+  <!-- Modal Content -->
+  <div
+    class="fixed inset-0 z-[101] flex items-center justify-center p-4 sm:p-8 pointer-events-none"
     role="dialog"
     aria-modal="true"
     aria-label={$videoModal.title}
   >
-    <!-- Backdrop -->
-    <div class="absolute inset-0 bg-black/90 backdrop-blur-md"></div>
-
     <!-- Video Container -->
     <div
-      class="relative w-full max-w-5xl max-h-[90vh] z-10"
+      class="relative w-full max-w-5xl max-h-[90vh] pointer-events-auto"
       transition:scale={{ duration: 300, start: 0.9 }}
     >
       <!-- Close Button -->
       <button
         onclick={closeVideoModal}
-        class="absolute -top-12 right-0 sm:top-0 sm:-right-12 w-10 h-10 flex items-center justify-center text-white/80 hover:text-white transition-colors duration-200 group"
+        class="absolute -top-12 right-0 sm:top-0 sm:-right-12 w-10 h-10 flex items-center justify-center text-white/80 hover:text-white transition-colors duration-200 group z-10"
         aria-label="Fechar vídeo"
       >
         <svg

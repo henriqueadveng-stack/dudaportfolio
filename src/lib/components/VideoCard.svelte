@@ -33,16 +33,16 @@
   onmouseleave={handleMouseLeave}
   aria-label="Assistir {video.title}"
 >
-  <!-- Video Preview - shows first frame as thumbnail, plays on hover (muted) -->
-  {#if isYouTube}
-    <!-- YouTube thumbnail -->
+  <!-- Video Preview - thumbnail image for fast loading -->
+  {#if video.thumbnail}
+    <!-- Thumbnail image (YouTube or local with thumbnail) -->
     <img
       src={video.thumbnail}
       alt={video.title}
       class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
     />
   {:else}
-    <!-- Local video preview -->
+    <!-- Local video without thumbnail - use video poster -->
     <video
       src={video.src}
       class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
