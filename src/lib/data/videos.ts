@@ -22,6 +22,7 @@ export const videosCaptados: Video[] = [
   {
     id: 'reels-banda-institucional',
     src: '/portfolio/videos/Reels - Banda - Institucional.mp4',
+    thumbnail: '/portfolio/videos/thumbnails/banda-institucional.jpg',
     title: 'Banda - Institucional',
     description: 'Vídeo institucional para banda',
     category: 'captados',
