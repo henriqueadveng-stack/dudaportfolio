@@ -9,7 +9,6 @@
   let { video }: Props = $props();
 
   let isHovered = $state(false);
-  let videoPreview: HTMLVideoElement;
 
   // Check if this is a YouTube-hosted video
   const isYouTube = !!video.youtubeId;
@@ -20,17 +19,10 @@
 
   function handleMouseEnter() {
     isHovered = true;
-    if (!isYouTube && videoPreview) {
-      videoPreview.play().catch(() => {});
-    }
   }
 
   function handleMouseLeave() {
     isHovered = false;
-    if (!isYouTube && videoPreview) {
-      videoPreview.pause();
-      videoPreview.currentTime = 0;
-    }
   }
 </script>
 
@@ -52,11 +44,9 @@
   {:else}
     <!-- Local video preview -->
     <video
-      bind:this={videoPreview}
       src={video.src}
       class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
       muted
-      loop
       playsinline
       preload="metadata"
       disablepictureinpicture
