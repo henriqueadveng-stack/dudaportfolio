@@ -87,6 +87,14 @@
               transition:fly={{ y: -10, duration: 200 }}
             >
               <a
+                href="/portfolio/sites"
+                class="block px-4 py-2 rounded-lg transition-colors duration-200 hover:bg-duda-verde/10 hover:text-duda-verde"
+                class:text-duda-verde={isActive('/portfolio/sites')}
+                onclick={handleNavClick}
+              >
+                Sites
+              </a>
+              <a
                 href="/portfolio/videos"
                 class="block px-4 py-2 rounded-lg transition-colors duration-200 hover:bg-duda-verde/10 hover:text-duda-verde"
                 class:text-duda-verde={isActive('/portfolio/videos')}
@@ -162,6 +170,15 @@
 
         <div class="space-y-4" transition:fly={{ x: -20, delay: 100 }}>
           <p class="text-duda-cinza-claro text-sm uppercase tracking-wider">Portfólio</p>
+          <a
+            href="/portfolio/sites"
+            class="block text-xl transition-colors duration-300 pl-4 border-l-2 border-duda-verde/30 hover:border-duda-verde"
+            class:text-duda-verde={isActive('/portfolio/sites')}
+            class:border-duda-verde={isActive('/portfolio/sites')}
+            onclick={handleNavClick}
+          >
+            Sites
+          </a>
           <a
             href="/portfolio/videos"
             class="block text-xl transition-colors duration-300 pl-4 border-l-2 border-duda-verde/30 hover:border-duda-verde"

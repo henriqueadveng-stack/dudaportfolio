@@ -5,6 +5,7 @@
   import AnimatedBackground from '$lib/components/AnimatedBackground.svelte';
   import VideoModal from '$lib/components/VideoModal.svelte';
   import Lightbox from '$lib/components/Lightbox.svelte';
+  import SitePreviewModal from '$lib/components/SitePreviewModal.svelte';
   import { page } from '$app/stores';
   import { fade } from 'svelte/transition';
 
@@ -51,3 +52,4 @@
 <!-- Modals -->
 <VideoModal />
 <Lightbox />
+<SitePreviewModal />

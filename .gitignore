@@ -23,3 +23,12 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
 .vercel
+
+# Test
+playwright-report/
+test-results/
+tests/
+
+# Misc
+nul
+tmpclaude-*

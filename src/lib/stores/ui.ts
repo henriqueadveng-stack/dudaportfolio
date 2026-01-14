@@ -77,3 +77,48 @@ export function closeMobileMenu() {
   mobileMenuOpen.set(false);
   document.body.style.overflow = '';
 }
+
+// Site preview modal state
+import type { Site } from '$lib/data/sites';
+
+export const sitePreview = writable<{
+  open: boolean;
+  site: Site | null;
+  sites: Site[];
+  currentIndex: number;
+  device: 'desktop' | 'tablet' | 'mobile';
+}>({
+  open: false,
+  site: null,
+  sites: [],
+  currentIndex: 0,
+  device: 'desktop',
+});
+
+export function openSitePreview(site: Site, allSites: Site[], index: number) {
+  sitePreview.set({ open: true, site, sites: allSites, currentIndex: index, device: 'desktop' });
+  document.body.style.overflow = 'hidden';
+}
+
+export function closeSitePreview() {
+  sitePreview.set({ open: false, site: null, sites: [], currentIndex: 0, device: 'desktop' });
+  document.body.style.overflow = '';
+}
+
+export function setPreviewDevice(device: 'desktop' | 'tablet' | 'mobile') {
+  sitePreview.update((state) => ({ ...state, device }));
+}
+
+export function nextSite() {
+  sitePreview.update((state) => {
+    const newIndex = (state.currentIndex + 1) % state.sites.length;
+    return { ...state, currentIndex: newIndex, site: state.sites[newIndex] };
+  });
+}
+
+export function prevSite() {
+  sitePreview.update((state) => {
+    const newIndex = state.currentIndex === 0 ? state.sites.length - 1 : state.currentIndex - 1;
+    return { ...state, currentIndex: newIndex, site: state.sites[newIndex] };
+  });
+}

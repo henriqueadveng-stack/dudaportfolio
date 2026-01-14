@@ -2,6 +2,14 @@
 
 @import 'tailwindcss';
 
+@font-face {
+  font-family: 'LiberRegular';
+  src: url('/fonts/LiberRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-duda-verde: #00E698;
   --color-duda-escuro: #1E211D;
@@ -273,5 +281,10 @@
   .px-safe {
     padding-left: max(1rem, env(safe-area-inset-left, 1rem));
     padding-right: max(1rem, env(safe-area-inset-right, 1rem));
+  }
+
+  /* Custom font for titles */
+  .font-liber {
+    font-family: 'LiberRegular', system-ui, sans-serif;
   }
 }
