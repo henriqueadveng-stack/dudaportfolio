@@ -58,20 +58,18 @@
 </section>
 
 <!-- Captados e Editados Section -->
-<section class="py-4 sm:py-6 md:py-8 px-3 sm:px-4 md:px-6">
-  <div class="container mx-auto max-w-4xl">
+<section class="py-6 sm:py-8 md:py-10 px-4 sm:px-6">
+  <div class="container mx-auto max-w-5xl">
     <AnimateOnScroll animation="fade-up">
-      <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-center">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-6 sm:mb-8 text-center">
         Captados e <span class="text-duda-verde">Editados</span>
       </h2>
     </AnimateOnScroll>
 
-    <div class="flex justify-center gap-2 sm:gap-3 md:gap-4">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
       {#each videosCaptados as video, i}
         <AnimateOnScroll animation="fade-up" delay={Math.min(i * 50, 300)}>
-          <div class="w-28 sm:w-32 md:w-40 lg:w-44">
-            <VideoCard {video} />
-          </div>
+          <VideoCard {video} />
         </AnimateOnScroll>
       {/each}
     </div>
@@ -79,20 +77,18 @@
 </section>
 
 <!-- Editados Section -->
-<section class="py-4 sm:py-6 md:py-8 px-3 sm:px-4 md:px-6">
-  <div class="container mx-auto max-w-4xl">
+<section class="py-6 sm:py-8 md:py-10 px-4 sm:px-6">
+  <div class="container mx-auto max-w-5xl">
     <AnimateOnScroll animation="fade-up">
-      <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-center">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-6 sm:mb-8 text-center">
         <span class="text-duda-verde">Editados</span>
       </h2>
     </AnimateOnScroll>
 
-    <div class="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
       {#each videosEditados as video, i}
         <AnimateOnScroll animation="fade-up" delay={Math.min(i * 50, 300)}>
-          <div class="w-28 sm:w-32 md:w-40 lg:w-44">
-            <VideoCard {video} />
-          </div>
+          <VideoCard {video} />
         </AnimateOnScroll>
       {/each}
     </div>
