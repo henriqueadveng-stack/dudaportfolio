@@ -46,14 +46,13 @@
 <!-- Hero Section -->
 <section class="pt-20 sm:pt-28 md:pt-36 pb-8 sm:pb-12 md:pb-16 px-4 sm:px-6">
   <div class="container mx-auto max-w-6xl text-center">
-    <!-- Title -->
+    <!-- Title Image -->
     <AnimateOnScroll animation="fade-down">
-      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-liber mb-4 sm:mb-6">
-        <span class="text-duda-verde">Sites</span>
-      </h1>
-      <p class="text-duda-cinza-claro text-sm sm:text-base md:text-lg max-w-xl mx-auto">
-        Criamos sites modernos, responsivos e otimizados para conversão
-      </p>
+      <img
+        src="/marca/TITULO_SITES.png"
+        alt="Portfólio"
+        class="h-16 sm:h-20 md:h-28 lg:h-32 w-auto mx-auto mb-4 sm:mb-6"
+      />
     </AnimateOnScroll>
   </div>
 </section>

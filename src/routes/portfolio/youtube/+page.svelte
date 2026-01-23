@@ -206,10 +206,10 @@
             </div>
           </div>
 
-          <!-- Banner Navigation Arrows -->
+          <!-- Banner Navigation Arrows - Always visible on mobile, hover on desktop -->
           <button
             onclick={prevCapa}
-            class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/50 text-white hover:bg-black/70 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100"
+            class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/50 text-white hover:bg-black/70 transition-all duration-300 flex items-center justify-center opacity-70 sm:opacity-0 sm:group-hover:opacity-100"
             aria-label="Capa anterior"
           >
             <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -219,7 +219,7 @@
 
           <button
             onclick={nextCapa}
-            class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/50 text-white hover:bg-black/70 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100"
+            class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/50 text-white hover:bg-black/70 transition-all duration-300 flex items-center justify-center opacity-70 sm:opacity-0 sm:group-hover:opacity-100"
             aria-label="Próxima capa"
           >
             <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -345,10 +345,10 @@
               </div>
             </div>
 
-            <!-- Navigation Arrows - Hidden on mobile (use swipe), visible on tablet+ -->
+            <!-- Navigation Arrows - Visible on all sizes -->
             <button
               onclick={prevThumb}
-              class="absolute -left-2 sm:-left-4 md:-left-6 top-1/2 -translate-y-1/2 z-20 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-white shadow-lg text-gray-700 hover:bg-gray-100 transition-all duration-300 items-center justify-center hidden sm:flex"
+              class="absolute left-1 sm:-left-4 md:-left-6 top-1/2 -translate-y-1/2 z-20 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-white/90 sm:bg-white shadow-lg text-gray-700 hover:bg-gray-100 transition-all duration-300 flex items-center justify-center"
               aria-label="Thumbnail anterior"
             >
               <svg class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -358,7 +358,7 @@
 
             <button
               onclick={nextThumb}
-              class="absolute -right-2 sm:-right-4 md:-right-6 top-1/2 -translate-y-1/2 z-20 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-white shadow-lg text-gray-700 hover:bg-gray-100 transition-all duration-300 items-center justify-center hidden sm:flex"
+              class="absolute right-1 sm:-right-4 md:-right-6 top-1/2 -translate-y-1/2 z-20 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-white/90 sm:bg-white shadow-lg text-gray-700 hover:bg-gray-100 transition-all duration-300 flex items-center justify-center"
               aria-label="Próximo thumbnail"
             >
               <svg class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
