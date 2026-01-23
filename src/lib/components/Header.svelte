@@ -110,6 +110,14 @@
               >
                 Design & Social Media
               </a>
+              <a
+                href="/portfolio/youtube"
+                class="block px-4 py-2 rounded-lg transition-colors duration-200 hover:bg-duda-verde/10 hover:text-duda-verde"
+                class:text-duda-verde={isActive('/portfolio/youtube')}
+                onclick={handleNavClick}
+              >
+                Thumbs e Capas Youtube
+              </a>
             </div>
           {/if}
         </div>
@@ -196,6 +204,15 @@
             onclick={handleNavClick}
           >
             Design & Social Media
+          </a>
+          <a
+            href="/portfolio/youtube"
+            class="block text-xl transition-colors duration-300 pl-4 border-l-2 border-duda-verde/30 hover:border-duda-verde"
+            class:text-duda-verde={isActive('/portfolio/youtube')}
+            class:border-duda-verde={isActive('/portfolio/youtube')}
+            onclick={handleNavClick}
+          >
+            Thumbs e Capas Youtube
           </a>
         </div>
 
