@@ -15,32 +15,34 @@
   <meta name="description" content="Uma dupla focada em transformar a comunicação visual e textual. Edição de vídeos e design para social media." />
 </svelte:head>
 
-<!-- Full Screen Centered Content -->
-<section class="h-full flex flex-col items-center justify-center px-4">
-  <!-- Logo - centered in screen -->
-  <div
-    class="flex-1 flex items-center justify-center transition-all duration-1000 ease-out"
-    class:opacity-0={!logoLoaded}
-    class:scale-90={!logoLoaded}
-    class:opacity-100={logoLoaded}
-    class:scale-100={logoLoaded}
-  >
-    <img
-      src="/marca/Logo Verde.png"
-      alt="DUDA Design Studio"
-      class="w-40 sm:w-56 md:w-64 lg:w-72 h-auto"
-    />
+<!-- Full Screen Centered Content - no scroll -->
+<section class="h-[100dvh] flex flex-col items-center justify-between px-4 py-6 sm:py-8 overflow-hidden">
+  <!-- Logo - centered with controlled size -->
+  <div class="flex-1 flex items-center justify-center min-h-0">
+    <div
+      class="transition-all duration-1000 ease-out"
+      class:opacity-0={!logoLoaded}
+      class:scale-90={!logoLoaded}
+      class:opacity-100={logoLoaded}
+      class:scale-100={logoLoaded}
+    >
+      <img
+        src="/marca/Logo Verde.png"
+        alt="DUDA Design Studio"
+        class="w-32 sm:w-48 md:w-64 lg:w-72 h-auto max-h-[40vh]"
+      />
+    </div>
   </div>
 
-  <!-- Icon Navigation - fixed at bottom -->
+  <!-- Icon Navigation - always visible at bottom -->
   <div
-    class="pb-8 sm:pb-12 md:pb-16 transition-all duration-700 ease-out w-full max-w-md px-4"
+    class="pb-2 sm:pb-4 md:pb-8 transition-all duration-700 ease-out w-full max-w-md shrink-0"
     class:opacity-0={!iconsVisible}
     class:translate-y-4={!iconsVisible}
     class:opacity-100={iconsVisible}
     class:translate-y-0={iconsVisible}
   >
-    <div class="flex items-center justify-between sm:justify-center sm:gap-12 md:gap-16">
+    <div class="flex items-center justify-around sm:justify-center sm:gap-12 md:gap-16">
       <!-- Portfolio Videos -->
       <a
         href="/portfolio/videos"
