@@ -103,6 +103,15 @@ export const videosEditados: Video[] = [
     description: 'Reels estilo meme para banda',
     category: 'editados',
   },
+  {
+    id: 'rh-motion-institucional',
+    src: '',
+    youtubeId: 'LC7XJ1SnKT4',
+    thumbnail: 'https://img.youtube.com/vi/LC7XJ1SnKT4/maxresdefault.jpg',
+    title: 'RH Motion - Institucional',
+    description: 'Vídeo institucional RH Motion',
+    category: 'editados',
+  },
 ];
 
 // Todos os vídeos combinados
