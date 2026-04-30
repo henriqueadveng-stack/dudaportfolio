@@ -54,6 +54,15 @@ export const videosCaptados: Video[] = [
     description: 'Short captado e editado pela DUDA',
     category: 'captados',
   },
+  {
+    id: 'reels-short-EZlOEPMgh2g',
+    src: '',
+    youtubeId: 'EZlOEPMgh2g',
+    thumbnail: 'https://img.youtube.com/vi/EZlOEPMgh2g/maxresdefault.jpg',
+    title: 'Short - Captado e Editado',
+    description: 'Short captado e editado pela DUDA',
+    category: 'captados',
+  },
 ];
 
 // Editados - vídeos apenas editados pela DUDA
