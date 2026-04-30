@@ -45,6 +45,15 @@ export const videosCaptados: Video[] = [
     description: 'Vídeo institucional para loja de sucos',
     category: 'captados',
   },
+  {
+    id: 'reels-short-WQJ2DghZYLA',
+    src: '',
+    youtubeId: 'WQJ2DghZYLA',
+    thumbnail: 'https://img.youtube.com/vi/WQJ2DghZYLA/maxresdefault.jpg',
+    title: 'Short - Captado e Editado',
+    description: 'Short captado e editado pela DUDA',
+    category: 'captados',
+  },
 ];
 
 // Editados - vídeos apenas editados pela DUDA
