@@ -143,6 +143,15 @@ export const videosLongos: Video[] = [
     description: 'Video longo editado pela DUDA',
     category: 'longos',
   },
+  {
+    id: 'video-longo-ICJOLzJA_Yw',
+    src: '',
+    youtubeId: 'ICJOLzJA_Yw',
+    thumbnail: 'https://img.youtube.com/vi/ICJOLzJA_Yw/maxresdefault.jpg',
+    title: 'Video Longo',
+    description: 'Video longo editado pela DUDA',
+    category: 'longos',
+  },
 ];
 
 export const videos: Video[] = [...videosCaptados, ...videosEditados, ...videosLongos];
