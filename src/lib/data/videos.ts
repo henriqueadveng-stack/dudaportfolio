@@ -4,7 +4,7 @@ export interface Video {
   thumbnail?: string;
   title: string;
   description?: string;
-  category: 'captados' | 'editados';
+  category: 'captados' | 'editados' | 'longos';
   youtubeId?: string; // For YouTube hosted videos
 }
 
@@ -132,5 +132,17 @@ export const videosEditados: Video[] = [
   },
 ];
 
-// Todos os vídeos combinados
-export const videos: Video[] = [...videosCaptados, ...videosEditados];
+// Vídeos Longos
+export const videosLongos: Video[] = [
+  {
+    id: 'video-longo-Vi6gWsFviA',
+    src: '',
+    youtubeId: '-Vi6gWsFviA',
+    thumbnail: 'https://img.youtube.com/vi/-Vi6gWsFviA/maxresdefault.jpg',
+    title: 'Video Longo',
+    description: 'Video longo editado pela DUDA',
+    category: 'longos',
+  },
+];
+
+export const videos: Video[] = [...videosCaptados, ...videosEditados, ...videosLongos];
