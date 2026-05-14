@@ -27,7 +27,7 @@
 </script>
 
 <button
-  class="group relative aspect-[9/16] w-full overflow-hidden rounded-xl glass card-hover cursor-pointer touch-target active:scale-[0.98] transition-transform"
+  class="group relative w-full overflow-hidden rounded-xl glass card-hover cursor-pointer touch-target active:scale-[0.98] transition-transform {video.category === 'longos' ? 'aspect-[16/9]' : 'aspect-[9/16]'}"
   onclick={handleClick}
   onmouseenter={handleMouseEnter}
   onmouseleave={handleMouseLeave}
