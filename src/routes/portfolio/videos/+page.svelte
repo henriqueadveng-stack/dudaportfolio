@@ -104,7 +104,7 @@
       </h2>
     </AnimateOnScroll>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
       {#each videosLongos as video, i}
         <AnimateOnScroll animation="fade-up" delay={Math.min(i * 50, 300)}>
           <VideoCard {video} />
