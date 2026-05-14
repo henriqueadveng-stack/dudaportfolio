@@ -27,7 +27,7 @@
       class:scale-100={logoLoaded}
     >
       <img
-        src="/marca/Logo Verde.png"
+        src="/marca/Davi_Logo.png"
         alt="DUDA Design Studio"
         class="w-32 sm:w-48 md:w-64 lg:w-72 h-auto max-h-[40vh]"
       />
