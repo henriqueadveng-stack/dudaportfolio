@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { videosCaptados, videosEditados } from '$lib/data/videos';
+  import { videosCaptados, videosEditados, videosLongos } from '$lib/data/videos';
   import VideoCard from '$lib/components/VideoCard.svelte';
   import ServiceCard from '$lib/components/ServiceCard.svelte';
   import AnimateOnScroll from '$lib/components/AnimateOnScroll.svelte';
@@ -87,6 +87,25 @@
 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
       {#each videosEditados as video, i}
+        <AnimateOnScroll animation="fade-up" delay={Math.min(i * 50, 300)}>
+          <VideoCard {video} />
+        </AnimateOnScroll>
+      {/each}
+    </div>
+  </div>
+</section>
+
+<!-- Vídeos Longos Section -->
+<section class="py-6 sm:py-8 md:py-10 px-4 sm:px-6">
+  <div class="container mx-auto max-w-5xl">
+    <AnimateOnScroll animation="fade-up">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-6 sm:mb-8 text-center">
+        Vídeos <span class="text-duda-verde">Longos</span>
+      </h2>
+    </AnimateOnScroll>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
+      {#each videosLongos as video, i}
         <AnimateOnScroll animation="fade-up" delay={Math.min(i * 50, 300)}>
           <VideoCard {video} />
         </AnimateOnScroll>
