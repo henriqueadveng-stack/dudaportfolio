@@ -130,6 +130,15 @@ export const videosEditados: Video[] = [
     description: 'Vídeo institucional RH Motion',
     category: 'editados',
   },
+  {
+    id: 'video-clipe-4PoEB4fZyz8',
+    src: '',
+    youtubeId: '4PoEB4fZyz8',
+    thumbnail: 'https://img.youtube.com/vi/4PoEB4fZyz8/maxresdefault.jpg',
+    title: 'Vídeo Clipe',
+    description: 'Vídeo clipe editado pela DUDA',
+    category: 'editados',
+  },
 ];
 
 // Vídeos Longos
