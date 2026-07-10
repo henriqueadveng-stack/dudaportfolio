@@ -63,6 +63,15 @@ export const videosCaptados: Video[] = [
     description: 'Short captado e editado pela DUDA',
     category: 'captados',
   },
+  {
+    id: 'reels-short-56SFi7AEmA0',
+    src: '',
+    youtubeId: '56SFi7AEmA0',
+    thumbnail: 'https://img.youtube.com/vi/56SFi7AEmA0/maxresdefault.jpg',
+    title: 'Short - Captado e Editado',
+    description: 'Short captado e editado pela DUDA',
+    category: 'captados',
+  },
 ];
 
 // Editados - vídeos apenas editados pela DUDA
@@ -137,6 +146,15 @@ export const videosEditados: Video[] = [
     thumbnail: 'https://img.youtube.com/vi/4PoEB4fZyz8/maxresdefault.jpg',
     title: 'Vídeo Clipe',
     description: 'Vídeo clipe editado pela DUDA',
+    category: 'editados',
+  },
+  {
+    id: 'reels-short-56SFi7AEmA0-editados',
+    src: '',
+    youtubeId: '56SFi7AEmA0',
+    thumbnail: 'https://img.youtube.com/vi/56SFi7AEmA0/maxresdefault.jpg',
+    title: 'Short - Editado',
+    description: 'Short editado pela DUDA',
     category: 'editados',
   },
 ];
