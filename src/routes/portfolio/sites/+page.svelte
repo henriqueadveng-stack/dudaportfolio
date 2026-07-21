@@ -84,7 +84,7 @@
             Estamos preparando nosso portfólio de sites. Entre em contato para conhecer nossos trabalhos!
           </p>
           <a
-            href="https://wa.me/5545999445919"
+            href="https://wa.me/554591587581"
             target="_blank"
             rel="noopener noreferrer"
             class="btn-primary inline-flex items-center gap-2 px-6 py-3"
@@ -137,7 +137,7 @@
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
           <a
-            href="https://wa.me/5545999445919"
+            href="https://wa.me/554591587581"
             target="_blank"
             rel="noopener noreferrer"
             class="btn-primary px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto text-sm sm:text-base"

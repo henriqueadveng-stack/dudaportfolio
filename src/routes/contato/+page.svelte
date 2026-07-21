@@ -43,7 +43,7 @@
   >
     <!-- WhatsApp -->
     <a
-      href="https://wa.me/5545999445919"
+      href="https://wa.me/554591587581"
       target="_blank"
       rel="noopener noreferrer"
       class="group flex flex-col items-center gap-3 sm:gap-4 p-5 sm:p-6 md:p-8 glass rounded-2xl transition-all duration-300 hover:scale-105 active:scale-[0.98] hover:bg-duda-verde/5 w-full sm:w-auto sm:min-w-[200px] md:min-w-[220px] touch-target"
@@ -55,7 +55,7 @@
       </div>
       <div class="text-center">
         <h3 class="font-semibold text-base sm:text-lg mb-1 group-hover:text-duda-verde transition-colors duration-300">WhatsApp</h3>
-        <p class="text-duda-cinza-claro text-xs sm:text-sm">+55 45 99944-5919</p>
+        <p class="text-duda-cinza-claro text-xs sm:text-sm">+55 45 9158-7581</p>
       </div>
     </a>
 
