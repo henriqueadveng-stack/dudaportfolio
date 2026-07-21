@@ -71,7 +71,7 @@
 
       <!-- WhatsApp Contact -->
       <a
-        href="https://wa.me/5545999445919"
+        href="https://wa.me/554591587581"
         target="_blank"
         rel="noopener noreferrer"
         class="group flex flex-col items-center gap-1.5 sm:gap-2 transition-transform duration-300 hover:scale-110 active:scale-95"

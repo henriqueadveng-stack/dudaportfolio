@@ -110,6 +110,7 @@
               >
                 Design & Social Media
               </a>
+              <!-- Seção temporariamente oculta: Thumbs e Capas Youtube
               <a
                 href="/portfolio/youtube"
                 class="block px-4 py-2 rounded-lg transition-colors duration-200 hover:bg-duda-verde/10 hover:text-duda-verde"
@@ -118,6 +119,7 @@
               >
                 Thumbs e Capas Youtube
               </a>
+              -->
             </div>
           {/if}
         </div>
@@ -205,6 +207,7 @@
           >
             Design & Social Media
           </a>
+          <!-- Seção temporariamente oculta: Thumbs e Capas Youtube
           <a
             href="/portfolio/youtube"
             class="block text-xl transition-colors duration-300 pl-4 border-l-2 border-duda-verde/30 hover:border-duda-verde"
@@ -214,6 +217,7 @@
           >
             Thumbs e Capas Youtube
           </a>
+          -->
         </div>
 
         <a
@@ -229,7 +233,7 @@
         <div class="mt-auto pt-8 border-t border-duda-verde/10" transition:fly={{ y: 20, delay: 200 }}>
           <div class="flex gap-4">
             <a
-              href="https://wa.me/5545999445919"
+              href="https://wa.me/554591587581"
               target="_blank"
               rel="noopener noreferrer"
               class="btn-primary flex-1 text-center"
