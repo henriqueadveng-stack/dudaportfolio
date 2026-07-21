@@ -85,8 +85,8 @@ export const designs: Design[] = [
     category: 'feed',
   },
   {
-    id: 'dgr_artrose_quadril.png',
-    src: '/portfolio/design/dgr_artrose_quadril.png',
+    id: 'quadril.png',
+    src: '/portfolio/design/quadril.png',
     alt: 'Artrose no Quadril',
     title: 'Artrose no Quadril',
     category: 'feed',
