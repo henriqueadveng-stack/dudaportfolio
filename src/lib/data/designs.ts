@@ -78,8 +78,8 @@ export const designs: Design[] = [
     category: 'feed',
   },
   {
-    id: 'dgr_copa_protese_quadril.png',
-    src: '/portfolio/design/dgr_copa_protese_quadril.png',
+    id: 'protese.png',
+    src: '/portfolio/design/protese.png',
     alt: 'Em clima de Copa e Prótese de Quadril',
     title: 'Copa & Prótese de Quadril',
     category: 'feed',
